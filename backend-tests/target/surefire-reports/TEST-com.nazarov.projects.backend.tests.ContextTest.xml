@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.nazarov.projects.backend.tests.ContextTest" time="2.468" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1250"/>
+    <property name="java.class.path" value="C:\private\projects\backend-framework\backend-tests\target\test-classes;C:\private\projects\backend-framework\backend-tests\target\classes;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-context\5.3.24\spring-context-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-aop\5.3.24\spring-aop-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-core\5.3.24\spring-core-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-jcl\5.3.24\spring-jcl-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-expression\5.3.24\spring-expression-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-beans\5.3.24\spring-beans-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-test\5.3.24\spring-test-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\ch\qos\logback\logback-classic\1.4.5\logback-classic-1.4.5.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;C:\Users\Andrii_Nazarov\.m2\repository\ch\qos\logback\logback-core\1.4.5\logback-core-1.4.5.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-junit5\2.20.1\allure-junit5-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-junit-platform\2.20.1\allure-junit-platform-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-java-commons\2.20.1\allure-java-commons-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-model\2.20.1\allure-model-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-test-filter\2.20.1\allure-test-filter-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-suite\1.9.2\junit-platform-suite-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.9.2\junit-platform-suite-engine-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.9.2\junit-platform-suite-commons-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-suite-api\1.9.2\junit-platform-suite-api-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Andrii_Nazarov\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Andrii_Nazarov\.m2\repository\com\nazarov\projects\backend-service\1.0-SNAPSHOT\backend-service-1.0-SNAPSHOT.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-rest-assured\2.20.1\allure-rest-assured-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-attachments\2.20.1\allure-attachments-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Belgrade"/>
+    <property name="user.country.format" value="PL"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
+    <property name="sun.java.command" value="C:\Users\Andrii_Nazarov\AppData\Local\Temp\surefire10385799368186243336\surefirebooter-20230312001244574_3.jar C:\Users\Andrii_Nazarov\AppData\Local\Temp\surefire10385799368186243336 2023-03-12T00-12-44_014-jvmRun1 surefire-20230312001244574_1tmp surefire_0-20230312001244574_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\private\projects\backend-framework\backend-tests\target\test-classes;C:\private\projects\backend-framework\backend-tests\target\classes;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-context\5.3.24\spring-context-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-aop\5.3.24\spring-aop-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-core\5.3.24\spring-core-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-jcl\5.3.24\spring-jcl-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-expression\5.3.24\spring-expression-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-beans\5.3.24\spring-beans-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\springframework\spring-test\5.3.24\spring-test-5.3.24.jar;C:\Users\Andrii_Nazarov\.m2\repository\ch\qos\logback\logback-classic\1.4.5\logback-classic-1.4.5.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\slf4j\slf4j-api\2.0.6\slf4j-api-2.0.6.jar;C:\Users\Andrii_Nazarov\.m2\repository\ch\qos\logback\logback-core\1.4.5\logback-core-1.4.5.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-junit5\2.20.1\allure-junit5-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-junit-platform\2.20.1\allure-junit-platform-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-java-commons\2.20.1\allure-java-commons-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-model\2.20.1\allure-model-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-test-filter\2.20.1\allure-test-filter-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-suite\1.9.2\junit-platform-suite-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-launcher\1.9.2\junit-platform-launcher-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.9.2\junit-platform-suite-engine-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.9.2\junit-platform-suite-commons-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\junit\platform\junit-platform-suite-api\1.9.2\junit-platform-suite-api-1.9.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Andrii_Nazarov\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Andrii_Nazarov\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\Andrii_Nazarov\.m2\repository\com\nazarov\projects\backend-service\1.0-SNAPSHOT\backend-service-1.0-SNAPSHOT.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-rest-assured\2.20.1\allure-rest-assured-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\io\qameta\allure\allure-attachments\2.20.1\allure-attachments-2.20.1.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Andrii_Nazarov\.m2\repository\org\projectlombok\lombok\1.18.24\lombok-1.18.24.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Andrii_Nazarov"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2018-09-25"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\private\projects\backend-framework\backend-tests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\Andrii_Nazarov\AppData\Local\Temp\surefire10385799368186243336\surefirebooter-20230312001244574_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11+28"/>
+    <property name="user.name" value="Andrii_Nazarov"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1250"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\Andrii_Nazarov\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\ANDRII~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="11"/>
+    <property name="user.dir" value="C:\private\projects\backend-framework\backend-tests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="user.language.format" value="pl"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python39\Scripts\;C:\Python39\;C:\Users\Andrii_Nazarov\scoop\apps\bazel\4.0.0;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-11\bin;C:\ProgramData\chocolatey\bin;C:\gradle\bin;C:\Allure\allure-commandline-2.13.9\allure-2.13.9\bin;C:\Program Files\Git\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Maven\bin;C:\Program Files\nodejs\;C:\Users\Andrii_Nazarov\scoop\shims;C:\Users\Andrii_Nazarov\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\bin;C:\Users\Andrii_Nazarov\AppData\Local\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\Andrii_Nazarov\AppData\Local\GitHubDesktop\bin;C:\Users\Andrii_Nazarov\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\Andrii_Nazarov\AppData\Roaming\npm;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11+28"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testGetUserEndpoint_200" classname="com.nazarov.projects.backend.tests.ContextTest" time="1.213">
+    <system-out><![CDATA[00:12:45,102 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.4.5
+00:12:45,128 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+00:12:45,139 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/C:/private/projects/backend-framework/backend-tests/target/test-classes/logback.xml]
+00:12:45,140 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@480d3575 - Resource [logback.xml] occurs multiple times on the classpath.
+00:12:45,140 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@480d3575 - Resource [logback.xml] occurs at [jar:file:/C:/Users/Andrii_Nazarov/.m2/repository/com/nazarov/projects/backend-service/1.0-SNAPSHOT/backend-service-1.0-SNAPSHOT.jar!/logback.xml]
+00:12:45,140 |-WARN in ch.qos.logback.classic.util.DefaultJoranConfigurator@480d3575 - Resource [logback.xml] occurs at [file:/C:/private/projects/backend-framework/backend-tests/target/test-classes/logback.xml]
+00:12:45,282 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [STDOUT]
+00:12:45,282 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [ch.qos.logback.core.ConsoleAppender]
+00:12:45,288 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+00:12:45,322 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to DEBUG
+00:12:45,327 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [STDOUT] to Logger[ROOT]
+00:12:45,327 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@f1da57d - End of configuration.
+00:12:45,328 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@194fad1 - Registering current configuration as safe fallback point
+
+2023-03-12 00:12:46 - DEBUG - [main] [BootstrapUtils                ] - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+2023-03-12 00:12:46 - DEBUG - [main] [BootstrapUtils                ] - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+2023-03-12 00:12:46 - DEBUG - [main] [BootstrapUtils                ] - Instantiating TestContextBootstrapper for test class [com.nazarov.projects.backend.tests.ContextTest] from class [org.springframework.test.context.support.DefaultTestContextBootstrapper]
+2023-03-12 00:12:46 - DEBUG - [main] [AbstractDelegatingSmartContextLoader] - Delegating to AnnotationConfigContextLoader to process context configuration [ContextConfigurationAttributes@182b435b declaringClass = 'com.nazarov.projects.backend.tests.ContextTest', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', locations = '{}', inheritLocations = true, initializers = '{}', inheritInitializers = true, name = [null], contextLoaderClass = 'org.springframework.test.context.ContextLoader'].
+2023-03-12 00:12:46 - DEBUG - [main] [ActiveProfilesUtils           ] - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.nazarov.projects.backend.tests.ContextTest]
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultTestContextBootstrapper] - @TestExecutionListeners is not present for class [com.nazarov.projects.backend.tests.ContextTest]: using defaults.
+2023-03-12 00:12:46 - INFO  - [main] [DefaultTestContextBootstrapper] - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultTestContextBootstrapper] - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultTestContextBootstrapper] - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultTestContextBootstrapper] - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+2023-03-12 00:12:46 - INFO  - [main] [DefaultTestContextBootstrapper] - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@2bffa76d, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@3b718392, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@6d2260db, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1f2d2181, org.springframework.test.context.event.EventPublishingTestExecutionListener@49bf29c6]
+2023-03-12 00:12:46 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - Before test class: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+2023-03-12 00:12:46 - DEBUG - [main] [DependencyInjectionTestExecutionListener] - Performing dependency injection for test context [[DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@15051a0, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+2023-03-12 00:12:46 - DEBUG - [main] [AbstractDelegatingSmartContextLoader] - Delegating to AnnotationConfigContextLoader to load context from [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]].
+2023-03-12 00:12:46 - DEBUG - [main] [AbstractGenericContextLoader  ] - Loading ApplicationContext for merged context configuration [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]].
+2023-03-12 00:12:46 - DEBUG - [main] [StandardEnvironment           ] - Activating profiles []
+2023-03-12 00:12:46 - DEBUG - [main] [AnnotationConfigContextLoader ] - Registering component classes: {class com.nazarov.projects.backend.tests.config.TestConfig}
+2023-03-12 00:12:46 - DEBUG - [main] [GenericApplicationContext     ] - Refreshing org.springframework.context.support.GenericApplicationContext@44d70181
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2023-03-12 00:12:46 - DEBUG - [main] [ClassPathBeanDefinitionScanner] - Identified candidate component class: URL [jar:file:/C:/Users/Andrii_Nazarov/.m2/repository/com/nazarov/projects/backend-service/1.0-SNAPSHOT/backend-service-1.0-SNAPSHOT.jar!/com/nazarov/projects/backend/config/ServiceConfig.class]
+2023-03-12 00:12:46 - DEBUG - [main] [ClassPathBeanDefinitionScanner] - Identified candidate component class: URL [jar:file:/C:/Users/Andrii_Nazarov/.m2/repository/com/nazarov/projects/backend-service/1.0-SNAPSHOT/backend-service-1.0-SNAPSHOT.jar!/com/nazarov/projects/backend/services/blog/BlogService.class]
+2023-03-12 00:12:46 - DEBUG - [main] [ClassPathBeanDefinitionScanner] - Identified candidate component class: URL [jar:file:/C:/Users/Andrii_Nazarov/.m2/repository/com/nazarov/projects/backend-service/1.0-SNAPSHOT/backend-service-1.0-SNAPSHOT.jar!/com/nazarov/projects/backend/services/blog/post/GetPostEndpoint.class]
+2023-03-12 00:12:46 - DEBUG - [main] [ClassPathBeanDefinitionScanner] - Identified candidate component class: URL [jar:file:/C:/Users/Andrii_Nazarov/.m2/repository/com/nazarov/projects/backend-service/1.0-SNAPSHOT/backend-service-1.0-SNAPSHOT.jar!/com/nazarov/projects/backend/services/blog/user/GetUserEndpoint.class]
+2023-03-12 00:12:46 - DEBUG - [main] [ClassPathBeanDefinitionScanner] - Identified candidate component class: file [C:\private\projects\backend-framework\backend-tests\target\test-classes\com\nazarov\projects\backend\tests\config\TestConfig.class]
+2023-03-12 00:12:46 - DEBUG - [main] [ClassPathBeanDefinitionScanner] - Identified candidate component class: URL [jar:file:/C:/Users/Andrii_Nazarov/.m2/repository/com/nazarov/projects/backend-service/1.0-SNAPSHOT/backend-service-1.0-SNAPSHOT.jar!/com/nazarov/projects/backend/services/blog/BlogService.class]
+2023-03-12 00:12:46 - DEBUG - [main] [ClassPathBeanDefinitionScanner] - Identified candidate component class: URL [jar:file:/C:/Users/Andrii_Nazarov/.m2/repository/com/nazarov/projects/backend-service/1.0-SNAPSHOT/backend-service-1.0-SNAPSHOT.jar!/com/nazarov/projects/backend/services/blog/post/GetPostEndpoint.class]
+2023-03-12 00:12:46 - DEBUG - [main] [ClassPathBeanDefinitionScanner] - Identified candidate component class: URL [jar:file:/C:/Users/Andrii_Nazarov/.m2/repository/com/nazarov/projects/backend-service/1.0-SNAPSHOT/backend-service-1.0-SNAPSHOT.jar!/com/nazarov/projects/backend/services/blog/user/GetUserEndpoint.class]
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Creating shared instance of singleton bean 'testConfig'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Creating shared instance of singleton bean 'serviceConfig'
+2023-03-12 00:12:46 - DEBUG - [main] [PropertySourcesPropertyResolver] - Found key 'api.baseUri' in PropertySource 'class path resource [application.properties]' with value of type String
+2023-03-12 00:12:46 - DEBUG - [main] [PropertySourcesPropertyResolver] - Found key 'api.blog.baseUri' in PropertySource 'class path resource [application.properties]' with value of type String
+2023-03-12 00:12:46 - DEBUG - [main] [PropertySourcesPropertyResolver] - Found key 'api.blog.apiKey' in PropertySource 'class path resource [application.properties]' with value of type String
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Creating shared instance of singleton bean 'blogService'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Creating shared instance of singleton bean 'getPostEndpoint'
+2023-03-12 00:12:46 - INFO  - [main] [ServiceConfig                 ] - Configuring request specification for Blog service
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Autowiring by type from bean name 'getPostEndpoint' via constructor to bean named 'BlogServiceReqSpec'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Autowiring by type from bean name 'getPostEndpoint' via constructor to bean named 'BlogServiceRespSpec'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Creating shared instance of singleton bean 'getUserEndpoint'
+2023-03-12 00:12:46 - INFO  - [main] [ServiceConfig                 ] - Configuring request specification for Blog service
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Autowiring by type from bean name 'getUserEndpoint' via constructor to bean named 'BlogServiceReqSpec'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Autowiring by type from bean name 'getUserEndpoint' via constructor to bean named 'BlogServiceRespSpec'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Autowiring by type from bean name 'blogService' via constructor to bean named 'getPostEndpoint'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultListableBeanFactory    ] - Autowiring by type from bean name 'blogService' via constructor to bean named 'getUserEndpoint'
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Storing ApplicationContext [1154941313] in cache under key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:46 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1]
+2023-03-12 00:12:46 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:46 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1]
+2023-03-12 00:12:47 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - Before test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@15051a0, testMethod = testGetUserEndpoint_200@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2023-03-12 00:12:47 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:47 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1]
+2023-03-12 00:12:47 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:47 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1]
+Request method:	GET
+Request URI:	http://localhost:8090/blog/users/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=9
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2023-03-12 00:12:47 - DEBUG - [main] [BasicClientConnectionManager  ] - Get connection for route {}->http://localhost:8090
+2023-03-12 00:12:47 - DEBUG - [main] [DefaultClientConnectionOperator] - Connecting to localhost:8090
+2023-03-12 00:12:47 - DEBUG - [main] [RequestAddCookies             ] - CookieSpec selected: ignoreCookies
+2023-03-12 00:12:47 - DEBUG - [main] [RequestAuthCache              ] - Auth cache not set in the context
+2023-03-12 00:12:47 - DEBUG - [main] [RequestTargetAuthentication   ] - Target auth state: UNCHALLENGED
+2023-03-12 00:12:47 - DEBUG - [main] [RequestProxyAuthentication    ] - Proxy auth state: UNCHALLENGED
+2023-03-12 00:12:47 - DEBUG - [main] [DefaultHttpClient             ] - Attempt 1 to execute request
+2023-03-12 00:12:47 - DEBUG - [main] [DefaultClientConnection       ] - Sending request: GET /blog/users/9 HTTP/1.1
+2023-03-12 00:12:47 - DEBUG - [main] [wire                          ] -  >> "GET /blog/users/9 HTTP/1.1[\r][\n]"
+2023-03-12 00:12:47 - DEBUG - [main] [wire                          ] -  >> "Content-Type: application/json[\r][\n]"
+2023-03-12 00:12:47 - DEBUG - [main] [wire                          ] -  >> "Accept: */*[\r][\n]"
+2023-03-12 00:12:47 - DEBUG - [main] [wire                          ] -  >> "Host: localhost:8090[\r][\n]"
+2023-03-12 00:12:47 - DEBUG - [main] [wire                          ] -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-12 00:12:47 - DEBUG - [main] [wire                          ] -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11)[\r][\n]"
+2023-03-12 00:12:47 - DEBUG - [main] [wire                          ] -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-03-12 00:12:47 - DEBUG - [main] [wire                          ] -  >> "[\r][\n]"
+2023-03-12 00:12:47 - DEBUG - [main] [headers                       ] - >> GET /blog/users/9 HTTP/1.1
+2023-03-12 00:12:47 - DEBUG - [main] [headers                       ] - >> Content-Type: application/json
+2023-03-12 00:12:47 - DEBUG - [main] [headers                       ] - >> Accept: */*
+2023-03-12 00:12:47 - DEBUG - [main] [headers                       ] - >> Host: localhost:8090
+2023-03-12 00:12:47 - DEBUG - [main] [headers                       ] - >> Connection: Keep-Alive
+2023-03-12 00:12:47 - DEBUG - [main] [headers                       ] - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11)
+2023-03-12 00:12:47 - DEBUG - [main] [headers                       ] - >> Accept-Encoding: gzip,deflate
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "HTTP/1.1 200 [\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Content-Type: application/json[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Date: Sat, 11 Mar 2023 23:12:48 GMT[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Keep-Alive: timeout=60[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Connection: keep-alive[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnection       ] - Receiving response: HTTP/1.1 200 
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << HTTP/1.1 200 
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Content-Type: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Transfer-Encoding: chunked
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Date: Sat, 11 Mar 2023 23:12:48 GMT
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Keep-Alive: timeout=60
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Connection: keep-alive
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultHttpClient             ] - Connection can be kept alive for 60000 MILLISECONDS
+2023-03-12 00:12:48 - DEBUG - [main] [RestAssuredHttpBuilder        ] - Parsing response as: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [RestAssuredHttpBuilder        ] - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "2d[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "{"id":9,"name":"Old Noakes","nickName":"old"}"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "0[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@799c8758
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Connection can be kept alive for 60000 MILLISECONDS
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 11 Mar 2023 23:12:48 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 9,
+    "name": "Old Noakes",
+    "nickName": "old"
+}
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - After test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@15051a0, testMethod = testGetUserEndpoint_200@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+]]></system-out>
+  </testcase>
+  <testcase name="testContext" classname="com.nazarov.projects.backend.tests.ContextTest" time="0.014">
+    <system-out><![CDATA[2023-03-12 00:12:48 - DEBUG - [main] [DependencyInjectionTestExecutionListener] - Performing dependency injection for test context [[DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@6d815fb7, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - Before test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@6d815fb7, testMethod = testContext@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - After test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@6d815fb7, testMethod = testContext@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+]]></system-out>
+  </testcase>
+  <testcase name="testGetPostEndpoint_200" classname="com.nazarov.projects.backend.tests.ContextTest" time="0.09">
+    <system-out><![CDATA[2023-03-12 00:12:48 - DEBUG - [main] [DependencyInjectionTestExecutionListener] - Performing dependency injection for test context [[DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@1d6713dd, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - Before test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@1d6713dd, testMethod = testGetPostEndpoint_200@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1]
+Request method:	GET
+Request URI:	http://localhost:8090/blog/posts/10
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=10
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Get connection for route {}->http://localhost:8090
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnectionOperator] - Connecting to localhost:8090
+2023-03-12 00:12:48 - DEBUG - [main] [RequestAddCookies             ] - CookieSpec selected: ignoreCookies
+2023-03-12 00:12:48 - DEBUG - [main] [RequestAuthCache              ] - Auth cache not set in the context
+2023-03-12 00:12:48 - DEBUG - [main] [RequestTargetAuthentication   ] - Target auth state: UNCHALLENGED
+2023-03-12 00:12:48 - DEBUG - [main] [RequestProxyAuthentication    ] - Proxy auth state: UNCHALLENGED
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultHttpClient             ] - Attempt 1 to execute request
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnection       ] - Sending request: GET /blog/posts/10 HTTP/1.1
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "GET /blog/posts/10 HTTP/1.1[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Content-Type: application/json[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Accept: */*[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Host: localhost:8090[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11)[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> GET /blog/posts/10 HTTP/1.1
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Content-Type: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Accept: */*
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Host: localhost:8090
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Connection: Keep-Alive
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11)
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Accept-Encoding: gzip,deflate
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "HTTP/1.1 200 [\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Content-Type: application/json[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Date: Sat, 11 Mar 2023 23:12:48 GMT[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Keep-Alive: timeout=60[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Connection: keep-alive[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnection       ] - Receiving response: HTTP/1.1 200 
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << HTTP/1.1 200 
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Content-Type: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Transfer-Encoding: chunked
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Date: Sat, 11 Mar 2023 23:12:48 GMT
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Keep-Alive: timeout=60
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Connection: keep-alive
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultHttpClient             ] - Connection can be kept alive for 60000 MILLISECONDS
+2023-03-12 00:12:48 - DEBUG - [main] [RestAssuredHttpBuilder        ] - Parsing response as: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [RestAssuredHttpBuilder        ] - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "80[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "{"id":10,"subject":"Bilbo story","body":"Hobbits story","author":{"id":5,"name":"Bilbo Baggins","nickName":"burglar"},"tags":[]}"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "0[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@69e2fe3b
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Connection can be kept alive for 60000 MILLISECONDS
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 11 Mar 2023 23:12:48 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 10,
+    "subject": "Bilbo story",
+    "body": "Hobbits story",
+    "author": {
+        "id": 5,
+        "name": "Bilbo Baggins",
+        "nickName": "burglar"
+    },
+    "tags": [
+        
+    ]
+}
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - After test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@1d6713dd, testMethod = testGetPostEndpoint_200@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+]]></system-out>
+  </testcase>
+  <testcase name="testGetPostService_200" classname="com.nazarov.projects.backend.tests.ContextTest" time="0.068">
+    <system-out><![CDATA[2023-03-12 00:12:48 - DEBUG - [main] [DependencyInjectionTestExecutionListener] - Performing dependency injection for test context [[DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@4276ad40, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - Before test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@4276ad40, testMethod = testGetPostService_200@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 1]
+Request method:	GET
+Request URI:	http://localhost:8090/blog/posts/10
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=10
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Get connection for route {}->http://localhost:8090
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnectionOperator] - Connecting to localhost:8090
+2023-03-12 00:12:48 - DEBUG - [main] [RequestAddCookies             ] - CookieSpec selected: ignoreCookies
+2023-03-12 00:12:48 - DEBUG - [main] [RequestAuthCache              ] - Auth cache not set in the context
+2023-03-12 00:12:48 - DEBUG - [main] [RequestTargetAuthentication   ] - Target auth state: UNCHALLENGED
+2023-03-12 00:12:48 - DEBUG - [main] [RequestProxyAuthentication    ] - Proxy auth state: UNCHALLENGED
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultHttpClient             ] - Attempt 1 to execute request
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnection       ] - Sending request: GET /blog/posts/10 HTTP/1.1
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "GET /blog/posts/10 HTTP/1.1[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Content-Type: application/json[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Accept: */*[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Host: localhost:8090[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11)[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> GET /blog/posts/10 HTTP/1.1
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Content-Type: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Accept: */*
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Host: localhost:8090
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Connection: Keep-Alive
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11)
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Accept-Encoding: gzip,deflate
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "HTTP/1.1 200 [\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Content-Type: application/json[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Date: Sat, 11 Mar 2023 23:12:48 GMT[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Keep-Alive: timeout=60[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Connection: keep-alive[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnection       ] - Receiving response: HTTP/1.1 200 
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << HTTP/1.1 200 
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Content-Type: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Transfer-Encoding: chunked
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Date: Sat, 11 Mar 2023 23:12:48 GMT
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Keep-Alive: timeout=60
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Connection: keep-alive
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultHttpClient             ] - Connection can be kept alive for 60000 MILLISECONDS
+2023-03-12 00:12:48 - DEBUG - [main] [RestAssuredHttpBuilder        ] - Parsing response as: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [RestAssuredHttpBuilder        ] - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "80[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "{"id":10,"subject":"Bilbo story","body":"Hobbits story","author":{"id":5,"name":"Bilbo Baggins","nickName":"burglar"},"tags":[]}"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "0[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@65d73bd
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Connection can be kept alive for 60000 MILLISECONDS
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 11 Mar 2023 23:12:48 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 10,
+    "subject": "Bilbo story",
+    "body": "Hobbits story",
+    "author": {
+        "id": 5,
+        "name": "Bilbo Baggins",
+        "nickName": "burglar"
+    },
+    "tags": [
+        
+    ]
+}
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - After test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@4276ad40, testMethod = testGetPostService_200@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+]]></system-out>
+  </testcase>
+  <testcase name="testGetUserService_200" classname="com.nazarov.projects.backend.tests.ContextTest" time="0.094">
+    <system-out><![CDATA[2023-03-12 00:12:48 - DEBUG - [main] [DependencyInjectionTestExecutionListener] - Performing dependency injection for test context [[DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@6ea66c33, testMethod = [null], testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]]].
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 25, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - Before test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@6ea66c33, testMethod = testGetUserService_200@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 26, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 27, missCount = 1]
+Request method:	GET
+Request URI:	http://localhost:8090/blog/users/9
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	id=9
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Get connection for route {}->http://localhost:8090
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnectionOperator] - Connecting to localhost:8090
+2023-03-12 00:12:48 - DEBUG - [main] [RequestAddCookies             ] - CookieSpec selected: ignoreCookies
+2023-03-12 00:12:48 - DEBUG - [main] [RequestAuthCache              ] - Auth cache not set in the context
+2023-03-12 00:12:48 - DEBUG - [main] [RequestTargetAuthentication   ] - Target auth state: UNCHALLENGED
+2023-03-12 00:12:48 - DEBUG - [main] [RequestProxyAuthentication    ] - Proxy auth state: UNCHALLENGED
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultHttpClient             ] - Attempt 1 to execute request
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnection       ] - Sending request: GET /blog/users/9 HTTP/1.1
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "GET /blog/users/9 HTTP/1.1[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Content-Type: application/json[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Accept: */*[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Host: localhost:8090[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Connection: Keep-Alive[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/11)[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  >> "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> GET /blog/users/9 HTTP/1.1
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Content-Type: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Accept: */*
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Host: localhost:8090
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Connection: Keep-Alive
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> User-Agent: Apache-HttpClient/4.5.13 (Java/11)
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - >> Accept-Encoding: gzip,deflate
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "HTTP/1.1 200 [\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Content-Type: application/json[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Transfer-Encoding: chunked[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Date: Sat, 11 Mar 2023 23:12:48 GMT[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Keep-Alive: timeout=60[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "Connection: keep-alive[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultClientConnection       ] - Receiving response: HTTP/1.1 200 
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << HTTP/1.1 200 
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Content-Type: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Transfer-Encoding: chunked
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Date: Sat, 11 Mar 2023 23:12:48 GMT
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Keep-Alive: timeout=60
+2023-03-12 00:12:48 - DEBUG - [main] [headers                       ] - << Connection: keep-alive
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultHttpClient             ] - Connection can be kept alive for 60000 MILLISECONDS
+2023-03-12 00:12:48 - DEBUG - [main] [RestAssuredHttpBuilder        ] - Parsing response as: application/json
+2023-03-12 00:12:48 - DEBUG - [main] [RestAssuredHttpBuilder        ] - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "2d[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "{"id":9,"name":"Old Noakes","nickName":"old"}"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "0[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [wire                          ] -  << "[\r][\n]"
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4243341e
+2023-03-12 00:12:48 - DEBUG - [main] [BasicClientConnectionManager  ] - Connection can be kept alive for 60000 MILLISECONDS
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Sat, 11 Mar 2023 23:12:48 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "id": 9,
+    "name": "Old Noakes",
+    "nickName": "old"
+}
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 28, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [DefaultCacheAwareContextLoaderDelegate] - Retrieved ApplicationContext [1154941313] from cache with key [[MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]]]
+2023-03-12 00:12:48 - DEBUG - [main] [cache                         ] - Spring test ApplicationContext cache statistics: [DefaultContextCache@60c1663c size = 1, maxSize = 32, parentContextCount = 0, hitCount = 29, missCount = 1]
+2023-03-12 00:12:48 - DEBUG - [main] [tractDirtiesContextTestExecutionListener] - After test method: context [DefaultTestContext@530a8454 testClass = ContextTest, testInstance = com.nazarov.projects.backend.tests.ContextTest@6ea66c33, testMethod = testGetUserService_200@ContextTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@1e34c607 testClass = ContextTest, locations = '{}', classes = '{class com.nazarov.projects.backend.tests.config.TestConfig}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{}', contextCustomizers = set[[empty]], contextLoader = 'org.springframework.test.context.support.DelegatingSmartContextLoader', parent = [null]], attributes = map['org.springframework.test.context.event.ApplicationEventsTestExecutionListener.recordApplicationEvents' -> false]], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null].
+]]></system-out>
+  </testcase>
+</testsuite>
