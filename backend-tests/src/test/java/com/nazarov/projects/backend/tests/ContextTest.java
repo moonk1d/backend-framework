@@ -4,9 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import com.nazarov.projects.backend.services.blog.BlogService;
 import com.nazarov.projects.backend.services.blog.post.GetPostEndpoint;
-import io.restassured.RestAssured;
 import com.nazarov.projects.backend.services.blog.user.GetUserEndpoint;
 import com.nazarov.projects.backend.tests.config.TestConfig;
+import io.restassured.RestAssured;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
