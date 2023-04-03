@@ -2,14 +2,13 @@
 *.class
 
 ### IntelliJ IDEA ###
-#.idea
+.idea
 *.iws
 *.iml
 *.ipr
 
 **/target
 **/.allure
-#.gitattributes
 
 # Log file
 *.log
