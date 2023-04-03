@@ -7,8 +7,8 @@
 *.iml
 *.ipr
 
-#**/target
-#**/.allure
+**/target
+**/.allure
 #.gitattributes
 
 # Log file
