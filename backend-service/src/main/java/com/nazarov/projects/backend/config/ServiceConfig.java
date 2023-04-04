@@ -21,7 +21,7 @@ import org.springframework.context.annotation.Scope;
 @Slf4j
 @Configuration
 @ComponentScan("com.nazarov.projects.backend")
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:application-${env:local}.properties")
 public class ServiceConfig {
 
   @Value("${api.baseUri}")

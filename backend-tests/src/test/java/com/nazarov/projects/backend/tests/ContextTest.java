@@ -7,11 +7,13 @@ import com.nazarov.projects.backend.services.blog.post.GetPostEndpoint;
 import com.nazarov.projects.backend.services.blog.user.GetUserEndpoint;
 import com.nazarov.projects.backend.tests.config.TestConfig;
 import io.restassured.RestAssured;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
 @SpringJUnitConfig(TestConfig.class)
+@Slf4j
 public class ContextTest {
 
   @Autowired
@@ -24,6 +26,7 @@ public class ContextTest {
 
   @Test
   public void testGetUserEndpoint_200() {
+    log.info("Test logging entry for custom allure appender");
     RestAssured
         .given(blogService.getEndpoint(GetUserEndpoint.class).getReqSpec())
         .pathParam("id", 9)
