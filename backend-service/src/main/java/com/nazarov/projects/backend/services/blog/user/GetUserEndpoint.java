@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
-public final class GetUserEndpoint extends BlogEndpoint {
+public final class GetUserEndpoint extends BlogEndpoint<GetUserEndpoint> {
 
   private final String path = "/users/{id}";
 
