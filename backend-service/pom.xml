@@ -23,6 +23,10 @@
       <artifactId>spring-beans</artifactId>
       <groupId>org.springframework</groupId>
     </dependency>
+    <dependency>
+      <artifactId>spring-core</artifactId>
+      <groupId>org.springframework</groupId>
+    </dependency>
 
     <!-- Logging -->
     <dependency>
