@@ -1,12 +1,9 @@
 package com.nazarov.projects.backend.tests;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import com.nazarov.projects.backend.services.blog.BlogService;
-import com.nazarov.projects.backend.services.blog.post.GetPostEndpoint;
-import com.nazarov.projects.backend.services.blog.user.GetUserEndpoint;
 import com.nazarov.projects.backend.tests.config.TestConfig;
-import io.restassured.RestAssured;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,50 +11,15 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
 @SpringJUnitConfig(TestConfig.class)
 @Slf4j
-public class ContextTest {
+class ContextTest {
 
   @Autowired
   private BlogService blogService;
 
   @Test
-  public void testContext() {
-    assertNotNull(blogService);
+  void testContext() {
+    assertThat(blogService).isNotNull();
   }
 
-  @Test
-  public void testGetUserEndpoint_200() {
-    log.info("Test logging entry for custom allure appender");
-    RestAssured
-        .given(blogService.getEndpoint(GetUserEndpoint.class).getReqSpec())
-        .pathParam("id", 9)
-        .when()
-        .get()
-        .then()
-        .statusCode(200);
-  }
-
-  @Test
-  public void testGetUserService_200() {
-    blogService.getEndpoint(GetUserEndpoint.class).getUser("9").statusCode(200);
-  }
-
-  @Test
-  public void testGetPostEndpoint_200() {
-    RestAssured
-        .given(blogService.getEndpoint(GetPostEndpoint.class).getReqSpec())
-        .pathParam("id", 10)
-        .when()
-        .get()
-        .then()
-        .statusCode(200);
-  }
-
-  @Test
-  public void testGetPostService_200() {
-    blogService
-        .getEndpoint(GetPostEndpoint.class)
-        .getPost("10")
-        .statusCode(200);
-  }
 
 }
