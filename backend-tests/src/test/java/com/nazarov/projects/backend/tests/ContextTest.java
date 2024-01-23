@@ -1,8 +1,8 @@
 package com.nazarov.projects.backend.tests;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.assertj.core.api.Assertions.assertThat;
 
-import com.nazarov.projects.backend.services.blog.user.GetUserEndpoint;
+import com.nazarov.projects.backend.services.blog.BlogService;
 import com.nazarov.projects.backend.tests.config.TestConfig;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -11,14 +11,14 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
 @SpringJUnitConfig(TestConfig.class)
 @Slf4j
-public class ContextTest {
+class ContextTest {
 
   @Autowired
-  private GetUserEndpoint getUserEndpoint;
+  private BlogService blogService;
 
   @Test
-  public void testContext() {
-    assertNotNull(getUserEndpoint);
+  void testContext() {
+    assertThat(blogService).isNotNull();
   }
 
 

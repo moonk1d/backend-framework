@@ -1,5 +1,8 @@
 package com.nazarov.projects.backend.tests;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
+import com.nazarov.projects.backend.models.blog.User;
 import com.nazarov.projects.backend.services.blog.user.GetUserEndpoint;
 import com.nazarov.projects.backend.tests.config.TestConfig;
 import io.restassured.RestAssured;
@@ -10,13 +13,13 @@ import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 
 @SpringJUnitConfig(TestConfig.class)
 @Slf4j
-public class GetUserEndpointTest {
+class GetUserEndpointTest {
 
   @Autowired
   private GetUserEndpoint getUserEndpoint;
 
   @Test
-  public void testGetUserEndpoint_200() {
+  void testGetUserEndpoint_200() {
     RestAssured
         .given(getUserEndpoint.getReqSpec())
         .pathParam("id", 9)
@@ -27,7 +30,15 @@ public class GetUserEndpointTest {
   }
 
   @Test
-  public void testGetUserService_200() {
-    getUserEndpoint.getUser("9").statusCode(200);
+  void testGetUserService_200() {
+    getUserEndpoint.getUserResponse("9").statusCode(200);
   }
+
+  @Test
+  void testGetUser_200() {
+    User user = getUserEndpoint.getUser("9");
+
+    assertThat(user.getId()).isEqualTo(9);
+  }
+
 }

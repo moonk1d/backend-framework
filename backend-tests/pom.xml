@@ -92,7 +92,14 @@
       <groupId>io.rest-assured</groupId>
       <scope>test</scope>
     </dependency>
-
+    <dependency>
+      <artifactId>jackson-databind</artifactId>
+      <groupId>com.fasterxml.jackson.core</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>assertj-core</artifactId>
+      <groupId>org.assertj</groupId>
+    </dependency>
     <!-- Test Framework -->
     <dependency>
       <artifactId>commons</artifactId>

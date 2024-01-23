@@ -171,6 +171,16 @@
         <groupId>org.projectlombok</groupId>
         <version>${lombok.version}</version>
       </dependency>
+      <dependency>
+        <artifactId>jackson-databind</artifactId>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <version>${jackson.version}</version>
+      </dependency>
+      <dependency>
+        <artifactId>assertj-core</artifactId>
+        <groupId>org.assertj</groupId>
+        <version>${assertj.version}</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
   <groupId>com.nazarov.projects</groupId>
@@ -187,11 +197,13 @@
   <properties>
     <allure-maven.plugin.version>2.12.0</allure-maven.plugin.version>
     <allure.version>2.20.1</allure.version>
+    <assertj.version>3.24.2</assertj.version>
+    <jackson.version>2.13.4</jackson.version>
     <jupiter.platform.suite.version>1.9.2</jupiter.platform.suite.version>
     <jupiter.version>5.9.2</jupiter.version>
+
     <logback.version>1.4.5</logback.version>
     <lombok.version>1.18.24</lombok.version>
-
     <maven.compiler.source>11</maven.compiler.source>
     <maven.compiler.target>11</maven.compiler.target>
     <maven.dependency.plugin.version>3.3.0</maven.dependency.plugin.version>
