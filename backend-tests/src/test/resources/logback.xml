@@ -6,10 +6,10 @@
     </encoder>
   </appender>
 
-  <appender class="com.nazarov.projects.commons.AllureLogAppender" name="ALLURE"/>
+  <appender class="com.nazarov.projects.commons.AllureLogAppender" name="ALLURE-REPORT-LOG"/>
 
-  <root level="debug">
+  <root level="DEBUG">
     <appender-ref ref="STDOUT"/>
-    <appender-ref ref="ALLURE"/>
+    <appender-ref ref="ALLURE-REPORT-LOG"/>
   </root>
 </configuration>
