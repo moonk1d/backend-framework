@@ -7,6 +7,11 @@
     <plugins>
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
+        <configuration>
+          <ignoredDependencies>
+            <ignoredDependency>com.fasterxml.jackson.core:jackson-databind:*</ignoredDependency>
+          </ignoredDependencies>
+        </configuration>
         <groupId>org.apache.maven.plugins</groupId>
       </plugin>
       <plugin>
@@ -41,6 +46,7 @@
     <dependency>
       <artifactId>logback-classic</artifactId>
       <groupId>ch.qos.logback</groupId>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <artifactId>logback-core</artifactId>
@@ -56,6 +62,11 @@
     <dependency>
       <artifactId>allure-junit5</artifactId>
       <groupId>io.qameta.allure</groupId>
+    </dependency>
+    <dependency>
+      <artifactId>allure-java-commons</artifactId>
+      <groupId>io.qameta.allure</groupId>
+      <scope>test</scope>
     </dependency>
 
     <!-- Junit -->
@@ -95,10 +106,12 @@
     <dependency>
       <artifactId>jackson-databind</artifactId>
       <groupId>com.fasterxml.jackson.core</groupId>
+      <scope>test</scope>
     </dependency>
     <dependency>
       <artifactId>assertj-core</artifactId>
       <groupId>org.assertj</groupId>
+      <scope>test</scope>
     </dependency>
     <!-- Test Framework -->
     <dependency>

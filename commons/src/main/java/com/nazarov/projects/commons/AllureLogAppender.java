@@ -2,13 +2,28 @@ package com.nazarov.projects.commons;
 
 import ch.qos.logback.classic.spi.ILoggingEvent;
 import ch.qos.logback.core.AppenderBase;
-import io.qameta.allure.Allure;
+import java.util.ArrayList;
+import java.util.List;
 
 public class AllureLogAppender extends AppenderBase<ILoggingEvent> {
 
+  private static final ThreadLocal<List<ILoggingEvent>> threadLocal = new ThreadLocal<>();
+
+  public static List<ILoggingEvent> getEvents() {
+    return threadLocal.get();
+  }
+
+  public static void clearEvents() {
+    threadLocal.remove();
+  }
+
   @Override
-  protected void append(ILoggingEvent loggingEvent) {
-    Allure.step("[Logback] " + loggingEvent.getFormattedMessage());
+  public void append(ILoggingEvent e) {
+    List<ILoggingEvent> events = threadLocal.get();
+    if (events == null) {
+      events = new ArrayList<>();
+      threadLocal.set(events);
+    }
+    events.add(e);
   }
 }
-
