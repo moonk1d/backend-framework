@@ -1,4 +1,4 @@
-package com.nazarov.projects.backend.tests.extenssions;
+package com.nazarov.projects.backend.tests.extensions;
 
 import static java.util.Objects.nonNull;
 
@@ -17,7 +17,7 @@ import org.junit.jupiter.api.extension.BeforeEachCallback;
 import org.junit.jupiter.api.extension.ExtensionContext;
 
 @Slf4j
-public class LogExt implements BeforeEachCallback, AfterEachCallback {
+public class AllureLoggingExtension implements BeforeEachCallback, AfterEachCallback {
 
   private static final Function<ILoggingEvent, String> eventFormatter = event -> {
     var formatter = DateTimeFormatter.ofPattern("HH:mm:ss.SSS").withZone(ZoneId.systemDefault());
